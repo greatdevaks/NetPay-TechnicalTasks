@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 3:JavaScript and CSS</title>
+	<link rel="stylesheet" type="text/css" href="css/task3_css.css">
+</head>
+<body>
+	<?php ?>
+	<h1>Technical Test 3: JavaScript and CSS</h1>
+	<span id="bar1" class="bar1">&nbsp;</span>
+	<span id="bar2" class="bar2">&nbsp;</span>
+	<span id="bar3" class="bar3">&nbsp;</span>
+	<br><br><br><br><br><br><br>
+	<button onclick="myFunction()">Click Me</button>
+	<script type="text/javascript" src="C:\wamp64\www\proj\js\task3_js.js"></script>
+	<script>	
+		function myFunction(){
+			let mytt1 = new CreateTooltip("bar1", "tt_bar1", "value <b>74</b>");
+		   	mytt1.setTooltip();
+		   	let mytt2 = new CreateTooltip("bar2", "tt_bar2", "value <b>45</b>");
+		   	mytt2.setTooltip();
+		   	let mytt3 = new CreateTooltip("bar3", "tt_bar3", "value <b>30</b>");
+		   	mytt3.setTooltip();
+		}
+	</script>
+</body>
+</body>
+</html>
