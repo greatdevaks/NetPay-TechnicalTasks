@@ -3,7 +3,7 @@
 
 require ("PayrollExpense.php");
 
-$year = 2012;
+$year = 2018;
 $obj = new PayrollExpense($year);
 $resPayroll = $obj->calculatePayroll();
 $resExpense = $obj->calculateExpenses();
