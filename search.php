@@ -1,3 +1,4 @@
+<h1>Technical Test 1: File Structure</h1>
 <form action="search.php" method="GET">
     <input type="text" name="query" />
     <input type="submit" value="Search" />
@@ -126,9 +127,10 @@ function get_path($node) {
     }
 
     foreach ($rows as $val) {
-        print_r($val);
-        echo "<br>";
-        print_r(get_paths($val['name']));
+        // print_r($val);
+        // echo "<br>";
+        // print_r(get_paths($val['name']));
+        echo implode("\\",get_paths($val['name']))."\\{$val['name']}";
         echo "<br><br>";
     }
     
